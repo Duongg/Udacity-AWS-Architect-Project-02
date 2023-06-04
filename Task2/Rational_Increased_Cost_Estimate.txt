@@ -1,0 +1,12 @@
+For increasing cost estimate:
+Upgrade and add more services:
+CloudFront: Add more edge location
+VPC: Increased number of NAT gate way
+Web Server EC2: 
+  - Increase number of instances
+  - Upgrade instance type
+App server EC2:
+  - Increase number of instances
+  - Upgrade instance type
+Add Route 53
+Add WAF for protect Cloudfront

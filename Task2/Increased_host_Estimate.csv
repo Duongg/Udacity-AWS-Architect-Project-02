@@ -1,0 +1,27 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+10372,19072.248,239238.98,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),S3 Bucket,S3 Standard,0,1538.16,18457.92,USD,,S3 Standard storage (30 TB per month)
+My Estimate,US East (N. Virginia),S3 Bucket,S3 Standard - Infrequent Access,0,0,0.00,USD,,
+My Estimate,US East (N. Virginia),S3 Bucket,S3 Glacier Instant Retrieval,0,0,0.00,USD,,
+My Estimate,US East (N. Virginia),S3 Bucket,Data Transfer,0,0,0.00,USD,,"DT Inbound: Internet (1 TB per month), DT Outbound: Amazon CloudFront (50 GB per month)"
+My Estimate,US East (N. Virginia),VPC,Network Address Translation (NAT) Gateway,0,1237.32,14847.84,USD,,Number of NAT Gateways (4)
+My Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,2786.18,33434.16,USD,,"Data transfer out to internet (5 TB per month), Data transfer out to origin (0 GB per month), Number of requests (HTTPS) (50000000 per month), Data transfer out to internet (5 TB per month), Number of requests (HTTPS) (50000000 per month), Data transfer out to internet (5 TB per month), Number of requests (HTTPS) (50000000 per month), Data transfer out to internet (5 TB per month), Number of requests (HTTPS) (50000000 per month), Data transfer out to internet (5 TB per month), Number of requests (HTTPS) (50000000 per month)"
+My Estimate,US East (N. Virginia),Web ALB,Application Load Balancer,0,1184.43,14213.16,USD,,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),App ALB,Application Load Balancer,0,1184.43,14213.16,USD,,Number of Application Load Balancers (1)
+My Estimate,US East (N. Virginia),Web Server,Amazon EC2 ,0,4943.56,59322.72,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (m5.12xlarge), Pricing strategy ( 1 Year  None upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),App Server,Amazon EC2 ,0,3642.408,43708.90,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (c7g.12xlarge), Pricing strategy ( 1 Year  None upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),Master DB,Amazon RDS for MySQL,5186,1180.1399999999999,19347.68,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (1), Instance type (db.m4.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr Partial Upfront), Additional backup storage (0 GB)"
+My Estimate,US East (N. Virginia),Read Replica,Amazon RDS for MySQL,5186,967.6199999999999,16797.44,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Quantity (1), Instance type (db.m4.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr Partial Upfront)"
+My Estimate,US East (N. Virginia),Amazon rount 53,Amazon Route 53,0,183,2196.00,USD,,"Hosted Zones (1), Additional Records in Hosted Zones (2), Basic Checks Within AWS (2), Number of Elastic Network Interfaces (2), Number of domains stored (2)"
+My Estimate,US East (N. Virginia),WAF,AWS Web Application Firewall (WAF),0,225,2700.00,USD,,"Number of Web Access Control Lists (Web ACLs) utilized (5 per month), Number of Rules added per Web ACL (5 per month), Number of Rule Groups per Web ACL (5 per month), Number of Rules inside each Rule Group (5 per month), Number of Managed Rule Groups per Web ACL (5 per month)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
